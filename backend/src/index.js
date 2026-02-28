@@ -30,7 +30,7 @@ initializeSocket(httpServer);
 
 app.use(
   cors({
-    origin: true,
+    origin: ["http://localhost:3000", /\.vercel\.app$/],
     credentials: true,
   }),
 );
@@ -71,7 +71,6 @@ app.use("/api/songs", songRoutes);
 app.use("/api/albums", albumRoutes);
 app.use("/api/stats", statRoutes);
 app.use("/api/search", searchRoutes);
-
 
 // error handler
 app.use((err, req, res, next) => {
