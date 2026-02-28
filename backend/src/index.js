@@ -30,7 +30,11 @@ initializeSocket(httpServer);
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", /\.vercel\.app$/],
+    origin: [
+      "http://localhost:3000",
+      "https://spotify-clonee-ten.vercel.app",
+      /\.vercel\.app$/,
+    ],
     credentials: true,
   }),
 );
