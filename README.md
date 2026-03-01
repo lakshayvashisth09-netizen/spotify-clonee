@@ -5,7 +5,7 @@ A full-stack Spotify-inspired music streaming application built using MERN stack
 ---
 
 ## 🚀 Live Demo
-https://your-vercel-link.vercel.app
+[https://your-vercel-link.vercel.app](https://spotify-clonee-ten.vercel.app/)
 
 ---
 
